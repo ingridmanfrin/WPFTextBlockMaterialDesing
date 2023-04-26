@@ -1,0 +1,41 @@
+﻿<Window x:Class="WPFTextBlock.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFTextBlock"
+        mc:Ignorable="d"
+        
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        
+        Title="MainWindow"
+        Height="400"
+        Width="300">
+    <StackPanel>
+        <TextBlock Margin="10">Texto mais simples possível</TextBlock>
+        <TextBlock Margin="10"
+                   Text="Outro texto bem simples" />
+        <TextBlock Margin="10"
+                   Foreground="Brown">Com cor de fonte</TextBlock>
+        <TextBlock Margin="10"
+                   Background="Yellow">Cor de fundo</TextBlock>
+        <TextBlock Margin="10"
+                   ToolTip="Dica de texto">Texto com dica</TextBlock>
+        <TextBlock Margin="10"
+                   Cursor="Help"> Cursor simples Help</TextBlock>
+        <TextBlock Margin="10,0,10,10"
+                   Cursor="Hand"
+                   TextAlignment="Center">Cursor Hand</TextBlock>
+        <TextBlock Margin="10"
+                   Cursor="SizeAll" FontSize="15"
+                   FontWeight="Bold"
+                   FontStyle="Italic">Arrow</TextBlock>
+    </StackPanel>
+</Window>
